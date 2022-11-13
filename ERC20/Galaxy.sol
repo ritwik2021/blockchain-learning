@@ -6,6 +6,11 @@ import "@openzeppelin/contracts@4.8.0/security/Pausable.sol";
 import "@openzeppelin/contracts@4.8.0/access/Ownable.sol";
 import "@openzeppelin/contracts@4.8.0/token/ERC20/extensions/draft-ERC20Permit.sol";
 
+/**
+  @title ERC20 contract having ability to pause, unpause, and initial minting of tokens.
+  * initial mint = 10 * (10 ** 18)
+  @author Ritwik Rohitashwa
+ */
 contract Galaxy is ERC20, Pausable, Ownable, ERC20Permit {
     uint256 constant INITIAL_SUPPLY = 100 * (10**18);
 
